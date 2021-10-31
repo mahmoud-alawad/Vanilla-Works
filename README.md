@@ -7,6 +7,5 @@ Mouse.Js is a simple javascript library, which changes the shape of the mouse in
 
 ##### Put the CSS file to your head tag:
 
-<link rel="stylesheet" href="dist/css/mouse.css" />
 <!-- or -->
 <link rel="stylesheet" href="dist/css/mouse-min.css" />
