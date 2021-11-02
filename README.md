@@ -8,12 +8,9 @@ cursorJS is a simple library to change and animate cursor mouse in your oroject
 
 ### USAGE
 
-#### first set new Cursor and a assign it to variable 
+#### first you have to link the css file to the  >head tag 
 ``` 
-<link rel="stylesheet" href="dist/css/mouse.css" />
-<!-- or -->
-<link rel="stylesheet" href="dist/css/mouse-min.css" />
-
+<link rel="stylesheet" href="css/cursor.css" />
 ``` 
 
 
