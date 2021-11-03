@@ -188,6 +188,6 @@ class Cursor {
         this.mouseElement.style.display = 'none'
     }
 }
-
-const m = new Cursor();
-m.init('red','cursor',false)
+const mainColor = document.documentElement.style.getPropertyValue('--cursor');
+const mouse = new Cursor();
+mouse.init(mainColor,'cursor',false)
