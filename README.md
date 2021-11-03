@@ -29,5 +29,8 @@ first argumnt take the color value and the second argument for the mouse type yo
 
 the third argument true or false for animation
 ```
-mouse.start('red','cursor',false)
+mouse.start({
+'red',
+'cursor',
+false})
 ```
