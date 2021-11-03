@@ -1,6 +1,12 @@
 :root{
     --cursor: #dedede;
 }
+
+
+body{
+    cursor: none;
+}
+
 .cursor{
     width: 0.9rem;
     height: 0.9rem;

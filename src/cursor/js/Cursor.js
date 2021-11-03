@@ -10,7 +10,7 @@ class Cursor {
     default = {}
 
 
-    start(parameters){
+    start = (parameters) => {
 
         this.default = {
             cursor_color: 'white',
@@ -30,7 +30,7 @@ class Cursor {
         //mouse moving functionality
         window.addEventListener('click', () => {
 
-            if (animate) {
+            if (this.defaultUser.cursor_animation) {
                 this.mouseElement.classList.add('cursor-animate')
             }
             setTimeout(() => {
@@ -59,10 +59,10 @@ class Cursor {
     }
 }
 
-let n = new Cursor();
+// let n = new Cursor();
 
-n.start({
-        cursor_color: '#eee',
-            cursor_type: 'cursor-pointed',
-            cursor_animation: false,
-})
+// n.start({
+//         cursor_color: '#eee',
+//             cursor_type: 'cursor-pointed',
+//             cursor_animation: false,
+// })
