@@ -30,7 +30,7 @@ first argumnt take the color value and the second argument for the mouse type yo
 ##### the default one is 'cursor'
 ##### the rectangle  'cursor-rectangle'
 ##### the rounded  'cursor-rounded'
-##### the pointed  'cursor-poindted'
+##### the pointed  'cursor-pointed'
 
 the third argument true or false for animation
 ```
