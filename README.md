@@ -1,3 +1,6 @@
+
+# the project on master branch :)
+
 # cursorJS
 
 cursorJS is a simple library to change and animate cursor mouse in your oroject
