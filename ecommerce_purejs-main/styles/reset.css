@@ -1,0 +1,17 @@
+/* import google  fonts */
+/*@import url('https://fonts.googleapis.com/css?family=Varela+Round');*/
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+/* reset the main property for  the page*/
+body, html, *::after,*::before,*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Varela Round', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+a,p,h1,h2,h3,h4,h5,h6{
+    text-decoration: none;
+    list-style: none;
+    
+}

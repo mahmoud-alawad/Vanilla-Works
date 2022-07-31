@@ -1,0 +1,8 @@
+[
+    {"name":"product 1","image":"./imgs/cake-1.jpeg","price":40,"id": 0},
+    {"name":"product 2","image":"./imgs/cake-1.jpeg","price":50,"id": 1},
+    {"name":"product 3","image":"./imgs/cake-1.jpeg","price":60,"id": 2},
+    {"name":"product 4","image":"./imgs/cake-1.jpeg","price":70,"id": 3},
+    {"name":"product 5","image":"./imgs/cake-1.jpeg","price":80,"id": 4},
+    {"name":"product 6","image":"./imgs/cake-1.jpeg","price":90,"id": 5}
+]

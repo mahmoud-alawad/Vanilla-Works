@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- box icon font icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- reset padding and margins -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <!-- to top button -->
+    <button class="to-top-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg></button>
+    <!-- ?xml version="1.0" standalone="no"?    background -->       
+    <div id="bg">
+            <svg  viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(119, 111, 196, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(25.063, 21.599, 58.4, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M23.6,-32.3C26.5,-25.6,22.2,-14.4,22.7,-5C23.1,4.4,28.5,12,27.3,17.3C26,22.5,18.2,25.5,10.9,26.9C3.5,28.3,-3.3,28.1,-10.4,26.4C-17.5,24.8,-24.8,21.7,-30,15.8C-35.1,9.9,-38.1,1.3,-37,-6.7C-35.8,-14.8,-30.5,-22.4,-23.7,-28.4C-16.8,-34.4,-8.4,-38.8,0.9,-39.9C10.3,-41.1,20.6,-38.9,23.6,-32.3Z" width="100%" height="20%" transform="translate(50 50)" style="transition: all 0.3s ease 0s;" stroke-width="0" stroke="url(#sw-gradient)"></path>              </svg>  
+    </div>
+
+    <!-- modall -->
+    <div class="modal">
+        <!-- Modal content -->
+    <div class="modal-content flex-bt">
+        <p class="message">Some text in the Modal..</p>
+        <span class="close">&times;</span>
+    </div>
+    </div>
+    <main class="flex-col">
+        <!-- header -->
+        <header class="flex-col">
+            <div class="container flex-col">
+                <!-- logo -->
+                <nav class="flex-bt">
+                    <div class="flex">
+                <div class="logo">
+                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M19 2H5C3.346 2 2 3.346 2 5v2.831c0 1.053.382 2.01 1 2.746V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.424c.618-.735 1-1.692 1-2.746V5c0-1.654-1.346-3-3-3zm1 3v2.831c0 1.14-.849 2.112-1.891 2.167L18 10c-1.103 0-2-.897-2-2V4h3c.552 0 1 .449 1 1zM10 8V4h4v4c0 1.103-.897 2-2 2s-2-.897-2-2zM4 5c0-.551.448-1 1-1h3v4c0 1.103-.897 2-2 2l-.109-.003C4.849 9.943 4 8.971 4 7.831V5zm6 11H6v-3h4v3z"></path></svg>
+                </div>
+                <!-- search field  -->
+                <input  type="text" placeholder="search for...">
+                    </div>
+                <!-- cart -->
+                <div class="flex">
+                    <span class="cart-total">0</span>
+                    <svg class="nav-cart" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>
+                </div>
+            </nav>
+            </div>
+        </header>
+        <!-- end header -->
+
+        <!-- main container -->
+        <div class="container flex-col main">
+
+            <!-- banner -->
+            <div class="banner flex-col">
+                    <div class="flex-bt ">
+                    <div class="flex-col banner-text-holder">
+                        <h1>E-Commerce</h1> <br>
+                        <h5>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. consectetur adipisicing elit. Blanditiis, magni?</h5>
+                    </div>
+                    <div class="flex banner-img-holder">
+                        <img src="./imgs/cake.jpg" alt="american-cake" width="100%">
+                    </div>
+                    </div>
+            </div>
+            
+            
+            <!-- ui products -->
+            <div class="products-holder">
+                <div class="product">
+                </div>
+            </div>
+
+            <!-- cart shopping -->
+            <div class="cart flex-col">
+                <div class="close-cart flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                </div>
+    
+                <div class="header flex">
+                    <h3 class="heading">shopping cart</h3>
+                </div>
+                <section class="products-cart-holder flex-col">
+                <!-- <article class="product flex-bt">
+                    <header>
+                        <div class="remove flex-col">
+                            <img src="./imgs/cake-1.jpeg" alt=".." width="80px">
+                            <h1>${name}</h1>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <h1>${name}</h1>
+                    </div>
+                    <footer class="content">
+                        <div class="controllers flex">
+                            <span class="qt-minus">-</span>
+                            <span class="qt">1</span>
+                            <span class="qt-plus">+</span>
+                        </div>
+                    </footer>
+                    <button class="flex product-remove-btn">remove</button>
+                </article> -->
+
+                <div class="price flex">
+                  
+                </div>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer  class="footer">
+            <div class="container flex-bt">
+                <div class="social flex">
+                    <a href="#">facebook</a>
+                    <a href="#">insta</a>
+                    <a href="#">twitter</a>
+                </div>
+                <div class="flex">
+                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M19 2H5C3.346 2 2 3.346 2 5v2.831c0 1.053.382 2.01 1 2.746V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.424c.618-.735 1-1.692 1-2.746V5c0-1.654-1.346-3-3-3zm1 3v2.831c0 1.14-.849 2.112-1.891 2.167L18 10c-1.103 0-2-.897-2-2V4h3c.552 0 1 .449 1 1zM10 8V4h4v4c0 1.103-.897 2-2 2s-2-.897-2-2zM4 5c0-.551.448-1 1-1h3v4c0 1.103-.897 2-2 2l-.109-.003C4.849 9.943 4 8.971 4 7.831V5zm6 11H6v-3h4v3z"></path></svg>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
