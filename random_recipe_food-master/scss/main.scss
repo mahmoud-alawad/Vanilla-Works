@@ -1,0 +1,191 @@
+  $gradient: linear-gradient(to bottom, #487eb0,#40739e);
+  $primary : #ecf0f1;
+
+@mixin flex($dir) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+}
+
+*{
+    font-family:  Georgia, Times, serif; 
+}
+body{
+    font-size: 18px;
+    min-height: 100vh;
+    background: $gradient;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    animation: animateBg 10s linear alternate infinite;
+    font-family:  Georgia, Times, serif; 
+    }
+
+    @keyframes animateBg {
+        0% {
+            background-position: left;
+        }
+        50% {
+            background-position: center;
+        }
+        100% {
+            background-position: right;
+        }
+    }
+
+
+    .spinner{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        @include flex(column);
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        background-color: white;
+        
+    }
+.menu{
+    width: 100%;
+}
+
+.title{
+margin: 1rem 0;
+padding: 1rem ;
+@include flex(column);
+    & > h2{
+        font-weight: bold;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 110%;
+            left: 0%;
+            background-color: #F97F51;
+            height: 1.3px;
+            width: 100%;
+        }
+    }
+
+    & #searchFoodSubmit{
+        margin-top: 3rem;
+        margin-bottom: 0;
+        width: 50%;
+    }
+}
+
+
+.grid{
+    @include flex(column);
+    @media screen and (max-width: 800px) {
+        grid-template-columns: auto;
+    }
+
+}
+
+.section-center{
+    margin: 3rem auto;
+
+& .menu-item{
+    width: 70%;
+    @include flex(column);
+    justify-content: center;
+    position: relative;
+    color: #dfe4ea;
+    & > img{
+        border-radius: 8px;
+        width: 100%;
+        max-height: 30vh;
+        cursor: pointer;
+        }
+        & .item-info{
+            padding: 1rem;
+            @include flex(column);
+            & > header{
+                width: 100%;
+                @include flex(row);
+                justify-content: space-around;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 110%;
+                    left: 0%;
+                    background-color: rgba(0, 0, 0, 0.435);
+                    height: 0.1rem;
+                    width: 100%;
+                    
+                }
+
+                @media screen and (max-width: 1000px) {
+                    @include flex(column);
+                    justify-content: space-between;
+
+                    & h4,h3{
+                        margin: 0.3rem 0;
+                    }
+                }
+            }
+
+                & .item-text{
+                    color: rgb(5, 3, 3);
+                    padding: 1rem 0;
+                }
+        }
+        & .menu-ingredients{
+            position: fixed;
+            top: -120%;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            height: 100%;
+            background-color: white;
+            @include flex(column);
+            border-radius: 5px;
+            justify-content: center;
+            max-height: 50vh;
+            color: black;
+            transition: all 1s ease-out;
+            & ul{
+                align-self: center;
+            }
+            & li{
+                list-style: decimal;
+                margin: 0.5rem 0;
+                
+            }
+            
+            & .close-ing{
+                position: absolute;
+                right: 0;
+                top: 0%;
+                font-size: 3rem;
+                border:3px solid $primary;
+                cursor: pointer;
+                &:hover{
+                    color: $primary;
+                }
+            }
+
+            &.active{
+                top: 0%;
+            }
+        }
+
+        & .btn{
+            border-radius: 4px;
+            outline: none;
+            border: none;
+            background-color: $primary;
+            margin: 0 1rem;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            @include flex(column);
+        }
+    }
+}
