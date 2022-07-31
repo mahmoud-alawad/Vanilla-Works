@@ -1,0 +1,50 @@
+@import 'variables.scss';
+
+.buttons{
+    background-color: $Desaturated_dark_blue;
+    width: 100%;
+    border-radius: 5px;
+        & .grid{
+            background-color: $Very_dark_desaturated_20;
+            width: 95%;
+            max-height: 70vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5);
+            grid-gap: $margin;
+            padding: $padding;
+            border-radius: 5px;
+
+            & > button{
+                width: 70%;
+                height: 2rem;
+                border-radius: 2px;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                &:hover{
+                    background-color: $Very_dark_grayish_blue;
+                }
+
+            }
+        }
+}
+
+#calculate{
+    background-color: $Red;
+    width: 100%;
+    color: $white;
+    &:hover{
+        opacity: 0.7;
+
+    }
+}
+
+#reset{
+    color: $white;
+    width: 100%;
+    background-color: $Desaturated_dark_blue;
+    &:hover{
+        opacity: 0.7;
+    }
+}

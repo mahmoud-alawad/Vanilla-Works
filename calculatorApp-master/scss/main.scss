@@ -1,0 +1,25 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'buttons.scss';
+
+
+*{
+    font-family: 'Spartan', sans-serif;
+}
+
+body{
+    background-color: $Desaturated_dark_blue;
+}
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1000px) {
+        width: 300px;
+    }
+}
+
+
+
+

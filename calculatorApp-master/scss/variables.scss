@@ -1,0 +1,28 @@
+//  Backgrounds
+$Very_dark_desaturated_31: hsl(222, 26%, 31%);/*(main background)*/
+$Very_dark_desaturated_20: hsl(223, 31%, 20%);/*(toggle background, keypad background)*/
+$Very_dark_desaturated_15: hsl(224, 36%, 15%); /*(screen background)*/
+
+// keys
+$Desaturated_dark_background /*(key background)*/: hsl(225, 21%, 49%);
+$Desaturated_dark_blue /*(key shadow)*/: hsl(224, 28%, 35%);
+
+$Red /*(key background, toggle)*/: hsl(6, 63%, 50%);
+$Dark_red /*(key shadow)*/: hsl(6, 70%, 34%);
+
+
+$Light_grayish_orange /*(key background)*/: hsl(30, 25%, 89%);
+$Grayish_orange /*(key shadow)*/: hsl(28, 16%, 65%);
+
+// Text
+$Very_dark_grayish_blue: hsl(221, 14%, 31%);
+$white: hsl(0, 0, 100%);
+
+$padding: 1rem; 
+$margin: 1rem; 
+$bold: 700;
+@mixin flex($dir) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+}

@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  min-height: 20vh;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.header .output {
+  background-color: #182034;
+  min-height: 13vh;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.header .output .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.header .output .content > span {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.buttons {
+  background-color: #404e72;
+  width: 100%;
+  border-radius: 5px;
+}
+.buttons .grid {
+  background-color: #232c43;
+  width: 95%;
+  max-height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5);
+  grid-gap: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.buttons .grid > button {
+  width: 70%;
+  height: 2rem;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.buttons .grid > button:hover {
+  background-color: #444b5a;
+}
+
+#calculate {
+  background-color: #d03f2f;
+  width: 100%;
+  color: white;
+}
+#calculate:hover {
+  opacity: 0.7;
+}
+
+#reset {
+  color: white;
+  width: 100%;
+  background-color: #404e72;
+}
+#reset:hover {
+  opacity: 0.7;
+}
+
+* {
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  background-color: #404e72;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 300px;
+  }
+}

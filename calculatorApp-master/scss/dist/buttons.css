@@ -1,0 +1,45 @@
+.buttons {
+  background-color: #404e72;
+  width: 100%;
+  border-radius: 5px;
+}
+.buttons .grid {
+  background-color: #232c43;
+  width: 95%;
+  max-height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5);
+  grid-gap: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.buttons .grid > button {
+  width: 70%;
+  height: 2rem;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.buttons .grid > button:hover {
+  background-color: #444b5a;
+}
+
+#calculate {
+  background-color: #d03f2f;
+  width: 100%;
+  color: white;
+}
+#calculate:hover {
+  opacity: 0.7;
+}
+
+#reset {
+  color: white;
+  width: 100%;
+  background-color: #404e72;
+}
+#reset:hover {
+  opacity: 0.7;
+}
