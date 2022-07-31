@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+table, th, td {
+    margin-top: 2rem;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;    
+  }
+
+  #form{
+      margin-top: 2rem;
+      text-align: center;
+       display: flex;
+       justify-content: center; 
+      & .input{
+          padding: 0.1rem 1rem;
+      }
+
+  }
+.output{
+    min-height: 43vh;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, (minmax, 200px, 1fr));
+    // grid-gap: 1rem;
+ .result{
+    background-color: white !important;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+& .title{
+    font-weight: bold;
+
+    & > span{
+        color: red;
+        font-size: 10px;
+    }
+}
+}
+
+
+//footer
+
+footer{
+    min-height: 20vh;
+}

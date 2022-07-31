@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+table, th, td {
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+#form {
+  margin-top: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#form .input {
+  padding: 0.1rem 1rem;
+}
+
+.output {
+  min-height: 43vh;
+}
+
+.output .result {
+  background-color: white !important;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.output .title {
+  font-weight: bold;
+}
+
+.output .title > span {
+  color: red;
+  font-size: 10px;
+}
+
+footer {
+  min-height: 20vh;
+}
+/*# sourceMappingURL=main.css.map */
