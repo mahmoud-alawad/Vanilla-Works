@@ -83,7 +83,7 @@ fi
 echo -e "${GREEN}✓ Installed to: $INSTALL_DIR${NC}"
 
 # Make fb.sh executable
-chmod +x "$INSTALL_DIR/fb.sh"
+chmod +x "$INSTALL_DIR/.fb/fb.sh"
 
 # Step 5: Create global symlink
 echo -e "${YELLOW}[5/5]${NC} Creating global symlink..."
@@ -91,12 +91,12 @@ echo -e "${YELLOW}[5/5]${NC} Creating global symlink..."
 # Check if we need sudo
 if [[ ! -w "$BIN_DIR" ]]; then
     echo -e "${YELLOW}⚠️  Need sudo to create symlink in $BIN_DIR${NC}"
-    sudo ln -sf "$INSTALL_DIR/fb.sh" "$BIN_DIR/fb" || {
+    sudo ln -sf "$INSTALL_DIR/.fb/fb.sh" "$BIN_DIR/fb" || {
         echo -e "${RED}✗ Failed to create global symlink${NC}"
         exit 1
     }
 else
-    ln -sf "$INSTALL_DIR/fb.sh" "$BIN_DIR/fb" || {
+    ln -sf "$INSTALL_DIR/.fb/fb.sh" "$BIN_DIR/fb" || {
         echo -e "${RED}✗ Failed to create global symlink${NC}"
         exit 1
     }
