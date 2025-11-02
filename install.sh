@@ -70,10 +70,10 @@ echo -e "${YELLOW}[4/5]${NC} Installing files..."
 
 
 # Copy contents of fb-1.0.0 to .fb directory
-if ! cp -r "$TEMP_DIR/fb-1.0.0"/* "$INSTALL_DIR/"; then
-    echo -e "${RED}✗ Failed to copy files to $INSTALL_DIR${NC}"
-    exit 1
-fi
+# if ! cp -r "$TEMP_DIR/fb-1.0.0"/* "$INSTALL_DIR/"; then
+#     echo -e "${RED}✗ Failed to copy files to $INSTALL_DIR${NC}"
+#     exit 1
+# fi
 
 if ! cp -r "$TEMP_DIR/fb-1.0.0"/.* "$INSTALL_DIR/"; then
     echo -e "${RED}✗ Failed to copy files to $INSTALL_DIR${NC}"
